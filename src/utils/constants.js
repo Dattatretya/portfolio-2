@@ -1,0 +1,1 @@
+export const BACKGROUND_IMG="https://wallpapers.com/images/high/1920x1080-aesthetic-fvin1slpl375uof3.webp"
