@@ -17,13 +17,13 @@ const Header = () => {
         </div>
         <div>
             <ul className='flex'>
-            <Link to="/"><h1 className='p-2 m-2'><FaHome />
+            <Link to="/"><h1 className='p-2 m-2 text-2xl'><FaHome />
 </h1></Link>
-                <Link to="/work"><li className='p-2 m-2'><MdWork />
+                <Link to="/work"><li className='p-2 m-2 text-2xl'><MdWork />
 </li></Link>
-                <Link to="/about"><li className='p-2 m-2'><CgProfile />
+                <Link to="/about"><li className='p-2 m-2 text-2xl'><CgProfile />
 </li></Link>
-                <Link to="/contact"><li className='p-2 m-2'><MdEmail />
+                <Link to="/contact"><li className='p-2 m-2 text-2xl'><MdEmail />
 </li></Link>
             </ul>
         </div>

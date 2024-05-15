@@ -10,6 +10,7 @@ import ImageCard from './ImageCard';
 const Body = () => {
 
   const [skills, setSkills] = useState(true)
+  const [helloMessage, setHelloMessage] = useState(true)
 
   const handleClick = () => {
     setSkills(!skills)
@@ -21,14 +22,15 @@ const Body = () => {
 
       {/* Location tar */}
       <div className='flex justify-center bg-gradient-to-l from-black p-2 w-64 rounded-3xl'>
-        <h1 className='m-2'>Located in Gurgaon</h1>
+        <h1 className='m-2'>Gurgaon</h1>
         <h2 className='flex items-center text-3xl animate-bounce m-2'><CiLocationOn />
 </h2>
       </div>
 
     {/* welcome message */}
-
-      <HelloMessage/>
+      <div className='w-full' onClick={()=>{setHelloMessage(!helloMessage)}}>
+      {helloMessage ?<HelloMessage/> : <p className='m-2 flex justify-center font-bold text-3xl'>Hello !!</p>}
+      </div>
 
       {/* Name and links  */}
       <div className='flex justify-center items-center m-2 p-3 mt-20 animate-pulse hover:animate-none md:bg-black rounded-lg'>

@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     
-    <div className="text-cyan-200" >
+    <div className="text-cyan-200 font-serif" >
     <BrowserRouter>
     <Header/>
       <Routes>

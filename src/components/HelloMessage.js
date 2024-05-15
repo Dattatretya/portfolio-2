@@ -8,12 +8,11 @@ const HelloMessage = () => {
     className='m-2 flex justify-center font-bold text-3xl'
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'Hello !!',
+        'Hello!',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'Welcome to my Portfolio website.',
+        'Welcome to my Portfolio.',
         1000,
-        'I am a Frontend Developer, using React JS',
-        1000,
+        
       ]}
       wrapper="span"
       speed={30}
