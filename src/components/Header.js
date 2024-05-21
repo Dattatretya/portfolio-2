@@ -13,7 +13,7 @@ import { FaLaughBeam } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className=' text-cyan-400 flex justify-between bg-gradient-to-b from-black'>
+    <div className=' text-cyan-400 flex justify-between bg-gradient-to-b from-black h-20'>
         <div>
             <Link to="/"><h1 className='p-2 m-2'>© Code by Dattatreya</h1></Link>
         </div>

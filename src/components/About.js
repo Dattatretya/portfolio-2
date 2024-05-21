@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Resume from '../resume/Resume.pdf'
 
 const About = () => {
 
@@ -6,40 +7,55 @@ const About = () => {
 
   return (
     
-    <div className='m-2 p-2 flex-col justify-center'>
-      <div className='flex flex-col justify-center m-2'>
+    <div className='m-2 p-2 flex-row justify-center '>
+      <div className='flex justify-between r m-2 text-white'>
+      <div className=''>
       <h1 className='font-bold text-3xl'>Dattatreya Sengupta</h1>
       <h1>Software Developer | Willing to relocate</h1>
       </div>
+      <div className='flex h-16'>
+        <a className='flex items-center p-1 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200 animate-pulse' href='https://www.linkedin.com/in/dattatreya-sengupta-7627a1148/' target='_blank'>LinkedIn</a>
+        <a className='flex items-center p-1 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200 animate-pulse' href='https://github.com/Dattatretya' target='_blank'>Github</a>
+        <a className='flex items-center p-1 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200 animate-pulse' href={Resume} target='_blank' download="Dattatreya Sengupta Resume">Download Resume</a>
+        </div>
+
+      </div>
       
-      <div className=' bg-black rounded-md m-2 p-2 shadow-sm shadow-white'>
-      <h1 className='text-xl underline'>Introdution:</h1>
-    <ul>
-        <li>👉🏻Achieved proficiency in frontend libraries like ReactJS through hands-on projects</li>
-        <li>👉🏻Built on a solid understanding of HTML, CSS, and JavaScript</li>
-        <li>👉🏻Coding skills extend to OOP languages like Python</li>
-        <li>👉🏻Currently in the process of learning the MERN development stack</li>
-        </ul>
-        </div>
-
-        <div className='bg-black text-yellow-300 p-2 m-2 rounded-md shadow-sm shadow-yellow-100'>
-          <h1 className='text-xl underline'>Skills:</h1>
-          <ul>
-            <li>.Frontend Development: HTML | CSS | JavaScript | React JS | Tailwind CSS</li>
-            <li>.State management: Redux (Redux Toolkit)</li>
-            <li>.Backend Development: Node JS | Express JS</li>
-            <li>.Database: MongoDB (No SQL)</li>
-            <li>.Miscellaneous: Python | Linux | OOP | Data Structures | GIT (Version Control) | HTTP</li>
-          </ul>
-        </div>
-
-        <div className='bg-black text-lime-300 p-2 m-2 rounded-lg shadow-md shadow-lime-200'>
-          <p className='text-xl underline'>Experience:</p>
-          <h2 className='font-bold'>Associate Engineer at Capgemini (20 Sept 2022 – Present)</h2>
-            <p>Working in the Cisco TAC project, managing the UCCX server. Trained in Linux and Networking concepts.</p>
+      <div className=''>
+      <div className='bg-violet-200 h-96 rounded-2xl m-2 text-violet-600 font-mono p-2'>
+        <div className='p-4 text-white text-lg'>Introduction</div>
+        <div className='flex flex-col justify-start'>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md '>Proficient in React JS</div>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md'>Solid understanding of HTML, CSS, JS</div>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md'>DSA in Python</div>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md'>Learning MERN</div>
 
         </div>
+      </div>
 
+      <div className='bg-white h-auto rounded-2xl p-2 py-4'>
+        <div className='p-4 text-violet-800 text-lg'>Skills</div>
+        <div className='flex flex-col justify-start'>
+          
+          <div className='px-4 py-2 text-2xl font-sans text-violet-950 bg-violet-200 m-2 rounded-md '>HTML | CSS | JavaScript | React JS | Tailwind CSS</div>
+          <div className='px-4 py-2 text-2xl font-sans text-violet-950 bg-violet-200 m-2 rounded-md '>Redux (Redux Toolkit)</div>
+          <div className='px-4 py-2 text-2xl font-sans text-violet-950 bg-violet-200 m-2 rounded-md '>Node JS | Express JS</div>
+          <div className='px-4 py-2 text-2xl font-sans text-violet-950 bg-violet-200 m-2 rounded-md '>MongoDB (No SQL)</div>
+          <div className='px-4 py-2 text-2xl font-sans text-violet-950 bg-violet-200 m-2 rounded-md mb-6'>Python | Linux | Data Structures | GIT </div>
+
+        </div>
+      </div>
+
+      <div className='bg-violet-900 h-96 rounded-2xl m-2 text-violet-600 font-mono p-2'>
+        <div className='p-4 text-white text-lg'>Experience</div>
+        <div className='flex flex-col justify-start'>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md'>Associate Engineer at Capgemini (20 Sept 2022 – Present)</div>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md'>Working in the Cisco TAC project, managing the UCCX server.</div>
+          <div className='px-4 py-2 text-2xl font-sans bg-white m-2 rounded-md'> Trained in Linux and Networking.</div>
+
+        </div>
+      </div>
+      </div>
     </div>
     
   )

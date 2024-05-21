@@ -9,10 +9,11 @@ import FunLogin from "./components/FunLogin";
 
 
 
+
 function App() {
   return (
     
-    <div className="text-cyan-200 font-serif p-2 h-[1000px]" >
+    <div className="text-cyan-200 font-serif h-[1000px]" >
     <BrowserRouter>
     <div className="sticky top-0">
     <Header/>

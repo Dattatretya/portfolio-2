@@ -21,7 +21,7 @@ const Body = () => {
 
   return (
     
-    <div className='text-white p-4'>
+    <div className='text-white'>
 
       {/* Location */}
       <div className='flex justify-center bg-gradient-to-l from-black p-2 w-80 rounded-3xl'>
@@ -36,8 +36,8 @@ const Body = () => {
       </div>
 
       {/* Name and links  */}
-      <div className='flex justify-center items-center m-2 p-3 mt-20 md:bg-black rounded-lg'>
-        <ImageCard/>
+      <div className='flex justify-center items-center m-2 p-3 mt-20 rounded-lg'>
+        {/* <ImageCard/> */}
         <div className='p-2'>
         <h1 className='text-4xl p-2 transition duration-150 ease-in hover:ease-out'>Frontend Developer</h1>
         <h2 className='text-xl p-2 mb-2'>Aspiring MERN Stack Developer</h2>
@@ -52,7 +52,7 @@ const Body = () => {
 
       {/* skills and intro */}
 
-      <div className='flex justify-center'>
+      <div className='flex justify-center text-yellow-200'>
       {skills===true? 
       (<div className='p-6 m-2 flex justify-center font-bold text-lg'>
         Proficient in React. Learning MERN and DSA.
@@ -68,7 +68,7 @@ const Body = () => {
       </div>
       
       
-      <div className='m-2 p-2 bg-black rounded-lg'>
+      <div className='m-6 py-6 p-2 bg-black rounded-lg animate-infinite-scroll'>
       <div className='flex justify-center'>
         <h1 className='font-bold text-2xl'>Projects:</h1>
       </div>
@@ -78,9 +78,8 @@ const Body = () => {
 
       <div className='m-2 p-2 rounded-lg'>
       <div className='flex justify-center'>
-        <h1 className='font-bold text-2xl'>Contact Me:</h1>
+        <h1 className='font-bold text-2xl'>Contact</h1>
       </div>
-      <Contact/>
       </div>
 
     </div>
