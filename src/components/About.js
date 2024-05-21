@@ -2,46 +2,46 @@ import React, { useState } from 'react'
 
 const About = () => {
 
-  const [pass, setPass] = useState("")
-  const [show, setShow] = useState(false)
-
-  const handleClick = () => {
-  if (pass==="878741"){
-    setShow(true)
-  }
-  else{
-    setShow(false)
-  }
-}
-
-  const hideButton = () => {
-    setShow(false)
-  }
+  
 
   return (
-    <div className='flex flex-col justify-center p-2 m-2'>
-      {!show && <div className='flex justify-center m-2 text-xl'>
-        Please enter the first 6 digits of my phone number
-      </div>}
-   
-      {!show && <div className='flex justify-center m-2'>
-      <label className='m-2'>Password: </label>
-      <input value={pass} onChange={(e)=>{setPass(e.target.value)}} 
-      className='text-black rounded-lg flex justify-center p-2' type='password'/>
-      </div>}
-      {!show && <div className='flex justify-center'>
-      <button className='items-center p-2 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200' onClick={()=>handleClick()} >Submit</button>
-      </div>}
-      <div>
-     
-    {show && <p1 className="text-4xl"> Dattatreya</p1>}
+    
+    <div className='m-2 p-2 flex-col justify-center'>
+      <div className='flex flex-col justify-center m-2'>
+      <h1 className='font-bold text-3xl'>Dattatreya Sengupta</h1>
+      <h1>Software Developer | Willing to relocate</h1>
       </div>
-      {show && <div className='flex justify-center'>
-        <button className='items-center p-2 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200'
-        onClick={()=>hideButton()}
-        >Hide</button>
-      </div>}
+      
+      <div className=' bg-black rounded-md m-2 p-2 shadow-sm shadow-white'>
+      <h1 className='text-xl underline'>Introdution:</h1>
+    <ul>
+        <li>👉🏻Achieved proficiency in frontend libraries like ReactJS through hands-on projects</li>
+        <li>👉🏻Built on a solid understanding of HTML, CSS, and JavaScript</li>
+        <li>👉🏻Coding skills extend to OOP languages like Python</li>
+        <li>👉🏻Currently in the process of learning the MERN development stack</li>
+        </ul>
+        </div>
+
+        <div className='bg-black text-yellow-300 p-2 m-2 rounded-md shadow-sm shadow-yellow-100'>
+          <h1 className='text-xl underline'>Skills:</h1>
+          <ul>
+            <li>.Frontend Development: HTML | CSS | JavaScript | React JS | Tailwind CSS</li>
+            <li>.State management: Redux (Redux Toolkit)</li>
+            <li>.Backend Development: Node JS | Express JS</li>
+            <li>.Database: MongoDB (No SQL)</li>
+            <li>.Miscellaneous: Python | Linux | OOP | Data Structures | GIT (Version Control) | HTTP</li>
+          </ul>
+        </div>
+
+        <div className='bg-black text-lime-300 p-2 m-2 rounded-lg shadow-md shadow-lime-200'>
+          <p className='text-xl underline'>Experience:</p>
+          <h2 className='font-bold'>Associate Engineer at Capgemini (20 Sept 2022 – Present)</h2>
+            <p>Working in the Cisco TAC project, managing the UCCX server. Trained in Linux and Networking concepts.</p>
+
+        </div>
+
     </div>
+    
   )
 }
 

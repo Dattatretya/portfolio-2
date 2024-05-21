@@ -9,15 +9,15 @@ const HelloMessage = () => {
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Hello!',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'Welcome to my Portfolio.',
-        1000,
+        2000, // wait 1s before replacing "Mice" with "Hamsters"
+        'I am Dattatreya Sengupta.',
+        2000,
         
       ]}
       wrapper="span"
       speed={30}
       //style={{ fontSize: '3em',font:'bold' , display: 'inline-block' }}
-      repeat={Infinity}
+      repeat={0}
     />
   )
 }
