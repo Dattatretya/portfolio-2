@@ -22,8 +22,11 @@ const FunLogin = () => {
       return (
         <div className='flex flex-col justify-center p-2 m-2'>
           {!show && <h1 className='flex justify-center m-2 text-2xl'>Frontend authentication</h1>}
-          {!show && <div className='flex justify-center m-2 text-xl'>
+          {!show && <div className='flex justify-center m-2 md:text-xl text-md'>
             Please enter the first 6 digits of my phone number
+          </div>}
+          {!show && <div className='flex justify-center m-2 md:hidden'>
+            Might not load properly on a mobile device.
           </div>}
        
           {!show && <div className='flex justify-center m-2'>

@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 const HelloMessage = () => {
   return (
     <TypeAnimation
-    className='m-2 flex justify-center font-bold text-3xl'
+    className='m-2 flex justify-center font-bold md:text-3xl text-xl'
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Hello!',
