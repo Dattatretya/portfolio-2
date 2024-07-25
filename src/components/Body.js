@@ -25,7 +25,7 @@ const Body = () => {
 
       {/* Location */}
       <div className='flex justify-center bg-gradient-to-l from-black p-2 w-80 rounded-3xl'>
-        <h1 className='m-2'>Gurgaon | Willing to relocate</h1>
+        <h1 className='m-2'>Bangalore</h1>
         <h2 className='flex items-center text-3xl animate-bounce m-2'><CiLocationOn /></h2>
 
       </div>
@@ -39,8 +39,8 @@ const Body = () => {
       <div className='flex justify-center items-center m-2 p-3 mt-20 rounded-lg'>
         {/* <ImageCard/> */}
         <div className='p-2'>
-        <h1 className='text-4xl p-2 transition duration-150 ease-in hover:ease-out'>Frontend Developer</h1>
-        <h2 className='text-xl p-2 mb-2'>Aspiring MERN Stack Developer</h2>
+        <h1 className='text-4xl p-2 transition duration-150 ease-in hover:ease-out'>Software Development Engineer</h1>
+        <h2 className='text-xl p-2 mb-2'> MERN Stack Developer</h2>
         <div className='flex'>
         <a className='flex items-center p-1 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200 animate-pulse' href='https://www.linkedin.com/in/dattatreya-sengupta-7627a1148/' target='_blank'>LinkedIn</a>
         <a className='flex items-center p-1 border border-cyan-400 text-white m-2 rounded-md hover:text-lime-200 animate-pulse' href='https://github.com/Dattatretya' target='_blank'>Github</a>
